@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Outfit';
+}
+
+:root {
+	--color-gray-01: #d5d5f2;
+	--color-gray-02: #e2e2f5;
+	--color-purple: #bf7bfb;
+	--color-blue: #151557;
+	--color-blue-light: #212187;
+	--color-dark-blue: #000013;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 16rem;
+}
+
+.info {
+  width: 38.0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+}
+
+#title {
+  color: var(--color-gray-01);
+  font-weight: bold;
+  font-size: 4.0rem;
+}
+
+#subtitle {
+  color: var(--color-gray-01);
+  font-weight: 300;
+  font-size: 2.0rem;
+}
+
+.btn {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.primary {
+  padding: 12px 24px;
+  background: var(--color-blue);
+  color: var(--color-gray-02);
+
+  border-radius: 999px;
+
+  text-transform: uppercase;  
+  font-weight: 500;
+
+  cursor: pointer;
+
+  outline: 0;
+  border: 0;
+}
+
+.primary:hover {
+  background: var(--color-blue-light);
+}
+
+.a404 {
+  padding-left: 4.8rem;
+  display: flex;
+  align-items: center;
+}
